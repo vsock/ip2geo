@@ -18,9 +18,10 @@ if using Docker version 24.0.6
 * Clone this repository to your pc (linux/mac) 
 
 ### Build and Run with Docker 
-* cd ~/<repo>
+* cd ~/\<repo>
 * docker build --tag ip2geo_latest
-* docker run ip2geo_vs <ip_address> 
+* docker run ip2geo_vs \<ip_address>
+ 
 e.g on debian
 ```
 $ sudo docker run ip2geo_vs 142.250.200.36
