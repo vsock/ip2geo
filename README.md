@@ -17,25 +17,27 @@ if using Docker version 24.0.6
 
 * Clone this repository to your pc (linux/mac) 
 
-### METHOD1 - BUILDING & RUNNING DOCKER IMAGE
+### Build and Run with Docker 
 * cd ~/<repo>
 * docker build --tag ip2geo_latest
 * docker run ip2geo_vs <ip_address> 
 e.g on debian
 ```
 $ sudo docker run ip2geo_vs 142.250.200.36
-51.45777893066406, -0.08556000143289566
-
-$ sudo docker run ip2geo_vs www.google.com
-37.419158935546875, -122.07540893554688
-
 ```
-### METHOD2: 
+```
+$ sudo docker run ip2geo_vs www.google.com
+```
+### Build & Run from source code
 * pip install -r requirements.txt
 * python3 ip2geo.py <Domain_name>/<ipv4>/<ipv6>
 ```
 python3 ip2geo.py www.google.com 
+```
+```
 python3 ip2geo.py 172.217.18.4
+```
+```
 python3 ip2geo.py 0000:0000:0000:0000:0000:ffff:d8ef:2678
 ```
 
